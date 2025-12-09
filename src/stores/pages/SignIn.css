@@ -1,0 +1,155 @@
+/* PAGE WRAPPER */
+.signin-container {
+  min-height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px 20px; /* navbar space */
+}
+
+/* CARD BOX */
+.signin-card {
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 18px rgba(46, 19, 201, 0.15);
+}
+
+/* LEFT IMAGE PANEL */
+.signin-left {
+  flex: 1;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.signin-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.brand-title {
+  display: flex;
+  gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.brand-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #00b4d8;
+  border-radius: 50%;
+}
+
+.brand-desc {
+  margin-top: 8px;
+  max-width: 300px;
+  opacity: 0.9;
+}
+
+/* RIGHT FORM PANEL */
+.signin-right {
+  flex: 1;
+  padding: 50px 40px;
+  background: #fff;
+}
+
+.signin-right h2 {
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* FORM */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.signin-form input {
+  height: 45px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+.signin-form input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 0 1px rgba(0,180,216,0.4);
+}
+
+/* BUTTON */
+.signin-btn {
+  height: 48px;
+  margin-top: 10px;
+  border: none;
+  background: #00b4d8;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signin-btn:hover {
+  background: #0077a8;
+}
+
+/* STATUS MESSAGES */
+.msg {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+/* SIGNUP LINK */
+.signup-text {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: #00b4d8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .signin-card {
+    flex-direction: column;
+  }
+  .signin-right {
+    padding: 30px 20px;
+  }
+}
+

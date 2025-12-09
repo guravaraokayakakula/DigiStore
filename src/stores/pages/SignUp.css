@@ -1,0 +1,157 @@
+/* PAGE WRAPPER */
+.signup-container {
+  min-height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px 20px; /* space for navbar */
+}
+
+/* MAIN CARD */
+.signup-card {
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* LEFT IMAGE PANEL */
+.signup-left {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 350px;
+}
+
+.signup-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.brand-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #00b4d8;
+  border-radius: 50%;
+}
+
+.brand-desc {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  max-width: 300px;
+  opacity: 0.9;
+}
+
+/* RIGHT FORM PANEL */
+.signup-right {
+  flex: 1;
+  padding: 50px 40px;
+  background: #fff;
+}
+
+.signup-right h2 {
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* FORM STYLING */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signup-form input {
+  height: 45px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+.signup-form input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 0 1px rgba(0, 180, 216, 0.4);
+}
+
+/* BUTTON */
+.signup-btn {
+  height: 48px;
+  background: #00b4d8;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signup-btn:hover {
+  background: #0077a8;
+}
+
+/* STATUS MESSAGE */
+.msg {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+/* SIGN IN LINK */
+.signin-text {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.signin-text a {
+  color: #00b4d8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signin-text a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .signup-card {
+    flex-direction: column;
+  }
+  .signup-right {
+    padding: 30px 20px;
+  }
+}
+

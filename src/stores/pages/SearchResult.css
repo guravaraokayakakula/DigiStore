@@ -1,0 +1,99 @@
+.search-page {
+  padding: 110px 30px 40px; /* top space for navbar */
+  background-color: aliceblue;
+  min-height: 100vh;
+}
+
+.search-title {
+  margin-bottom: 15px;
+}
+
+.search-title span {
+  color: #00b4d8;
+}
+
+.search-empty {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.search-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.search-img {
+  text-align: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-img img {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.search-info h4 {
+  font-size: 0.95rem;
+  margin: 8px 0 4px;
+}
+
+.search-sub {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.search-price {
+  margin-top: 6px;
+  font-weight: 700;
+}
+.search-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.search-add-btn,
+.search-buy-btn {
+  flex: 1;
+  height: 36px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.search-add-btn {
+  background: #00b4d8;
+  color: #fff;
+}
+
+.search-add-btn:hover {
+  background: #0077a8;
+}
+
+.search-buy-btn {
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #ff9800;
+  color: #fff;
+}
+
+.search-buy-btn:hover {
+  background: #ef6c00;
+}
