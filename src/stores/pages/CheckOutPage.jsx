@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Checkout.css";
+import "./CheckOut.css";
 import Navbar from "../components/Navbar";
 import { useCart } from "../context/CartContext";
 
